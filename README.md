@@ -15,20 +15,7 @@
 *Таблица 1. Случайные 10 значений тренировочного датасета*
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -414,3 +401,13 @@ R2 для тренировочного набора данных выросла 
 - документация API доступна по адресу [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ### Демонстрация работы сервиса
+Получение предсказание по одной машине `[POST]/predict_item`
+![png](img/002.png)
+
+Получение предсказаний по списку машин `[POST]/predict_items`
+![png](img/003.png)
+
+Получение csv файла с предсказанными ценами `[POST]/predict_items/csv`
+![png](img/004.png)
+
+Для проверки этого ендпойнта можно использовать файл [cars_test.csv](datasets/cars_test.csv) в директории `datasets`.

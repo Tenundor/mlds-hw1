@@ -92,6 +92,7 @@ def prepare_prediction_file_response(
     output.seek(0)
     response = StreamingResponse(
         output,
+        media_type="text/csv",
         headers={
             "Content-Disposition": 'attachment; filename="prediction.csv"'
         }
